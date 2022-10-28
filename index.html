@@ -34,11 +34,50 @@
                 </li>
             </ul>
             <img class="container_imagem" src="img/Logo.svg">
+            <h1 class="container_titulo"><b class="container_titulo-negrito">Alura</b>Books</h1>
         </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes_botao">
+            <label for="opcoes-menu">
+                <li class="opcoes_item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu_item">
+                    <a href="#" class="lista-menu_link">Front-end</a>
+                </li>
+                <li class="lista-menu_item">
+                    <a href="#" class="lista-menu_link">Programação</a>
+                </li>
+                <li class="lista-menu_item">
+                    <a href="#" class="lista-menu_link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu_item">
+                    <a href="#" class="lista-menu_link">Business</a>
+                </li>
+                <li class="lista-menu_item">
+                    <a href="#" class="lista-menu_link">Design & UX</a>
+                </li>
+            </ul>
+
+            <li class="opcoes_item"><a href="#" class="opcoes_link">Favoritos</a></li>
+            <li class="opcoes_item"><a href="#" class="opcoes_link">Minha estante</a></li>
+        </ul>
+
+
         <div class="container">
-            <a href="#"><img src="/img/Favoritos.svg" alt="favoritos" class="container_imagem"></a>
-            <a href="#"><img src="/img/Compras.svg" alt="carrinho de compras" class="container_imagem"></a>
-            <a href="#"><img src="/img/Usuario.svg" alt="usuario" class="container_imagem"></a>
+            <a href="#">
+                <img src="/img/Favoritos.svg" alt="favoritos" class="container_imagem container_imagem-transparente">
+            </a>
+            <a href="#" class="container_link">
+                <img src="/img/Compras.svg" alt="carrinho de compras" class="container_imagem">
+                <p class="container_texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container_link">
+                <img src="/img/Usuario.svg" alt="usuario" class="container_imagem">
+                <p class="container_texto">Meu perfil</p>
+            </a>
         </div>
     </header>
     <section class="banner">
@@ -48,83 +87,85 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel_titulo">Novos lançamentos</h2>
-        <div class="swiper">
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="livro sobre apache"></div>
-              <div class="swiper-slide"><img src="img//Javascript.svg" alt="livro sobre javascript"></div>
-              <div class="swiper-slide"><img src="img/Gestão2.svg" alt="livro sobre gestão"></div>
-              <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="livro sobre Front-end"></div>
-              <div class="swiper-slide"><img src="img/UX.svg" alt="livro sobre UX"></div>
-              <div class="swiper-slide"><img src="img/MEAN.svg" alt="livro sobre Mean"></div>
-            </div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          
-          </div>
-
-          <div class="card">
-            <div class="card_desc">
-                <div class="desc">
-                    <h3 class="desc_titulo">Talvez você também se interesse por...</h3>
-                    <h2 class="desc_titulo-livro">Angular 11 e Firebase</h2>
-                    <p class="desc_texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            <div class="carrossel-container">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="livro sobre apache"></div>
+                      <div class="swiper-slide"><img src="img//Javascript.svg" alt="livro sobre javascript"></div>
+                      <div class="swiper-slide"><img src="img/Gestão2.svg" alt="livro sobre gestão"></div>
+                      <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="livro sobre Front-end"></div>
+                      <div class="swiper-slide"><img src="img/UX.svg" alt="livro sobre UX"></div>
+                      <div class="swiper-slide"><img src="img/MEAN.svg" alt="livro sobre Mean"></div>
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
                 </div>
-                <img src="img/Angular.svg" class="desc_angular" alt="imagem angular">
+                <div class="card">
+                    <div class="card_desc">
+                        <div class="desc">
+                            <h3 class="desc_titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="desc_titulo-livro">Angular 11 e Firebase</h2>
+                            <p class="desc_texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                        </div>
+                        <img src="img/Angular.svg" class="desc_angular" alt="imagem angular">
+                    </div>
+                        <div class="card_botoes">
+                            <ul class="botoes">
+                                <li class="botoes_item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
+                                <li class="botoes_item"><img src="img/Compras.svg" alt="favoritar livro"></li>
+                            </ul>
+                            <a href="#" class="botoes_ancora">Saiba mais</a>
+                        </div>
+                </div>
             </div>
-            <div class="card_botoes">
-                <ul class="botoes">
-                    <li class="botoes_item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
-                    <li class="botoes_item"><img src="img/Compras.svg" alt="favoritar livro"></li>
-                </ul>
-                <a href="#" class="botoes_ancora">Saiba mais</a>
-            </div>
-          </div>
     </section>
 
-    <h2 class="carrossel_titulo">Mais vendidos</h2>
-        <div class="swiper">
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="img/MEAN.svg" alt="livro sobre Mean"></div>
-              <div class="swiper-slide"><img src="img//Javascript.svg" alt="livro sobre javascript"></div>
-              <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="livro sobre apache"></div>
-              <div class="swiper-slide"><img src="img/Gestão2.svg" alt="livro sobre gestão"></div>
-              <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="livro sobre Front-end"></div>
-              <div class="swiper-slide"><img src="img/UX.svg" alt="livro sobre UX"></div>
-            </div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          
-          </div>
 
-          <div class="card">
-            <div class="card_desc">
-                <div class="desc">
-                    <h3 class="desc_titulo">Autora do mês</h3>
-                    <h2 class="desc_titulo-livro">Juliana Agarikov</h2>
-                    <p class="desc_texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+    <section class="carrossel">
+        <h2 class="carrossel_titulo">Mais vendidos</h2>
+            <div class="carrossel-container carrossel-container_inverso">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/MEAN.svg" alt="livro sobre Mean"></div>
+                        <div class="swiper-slide"><img src="img//Javascript.svg" alt="livro sobre javascript"></div>
+                        <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="livro sobre apache"></div>
+                        <div class="swiper-slide"><img src="img/Gestão2.svg" alt="livro sobre gestão"></div>
+                        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="livro sobre Front-end"></div>
+                        <div class="swiper-slide"><img src="img/UX.svg" alt="livro sobre UX"></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <img src="img/Juliana Agarikov.svg" alt="imagem anarikov">
+                <div class="card">
+                    <div class="card_desc">
+                        <div class="desc">
+                            <h3 class="desc_titulo">Autora do mês</h3>
+                            <h2 class="desc_titulo-livro">Juliana Agarikov</h2>
+                            <p class="desc_texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                        </div>
+                        <img src="img/Juliana Agarikov.svg" alt="imagem anarikov">
+                    </div>
+                    <div class="card_botoes">
+                        <ul class="botoes">
+                            <li class="botoes_item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
+                            <li class="botoes_item"><img src="img/Compras.svg" alt="favoritar livro"></li>
+                        </ul>
+                        <a href="#" class="botoes_ancora">Saiba mais</a>
+                    </div>
+                </div>
             </div>
-            <div class="card_botoes">
-                <ul class="botoes">
-                    <li class="botoes_item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
-                    <li class="botoes_item"><img src="img/Compras.svg" alt="favoritar livro"></li>
-                </ul>
-                <a href="#" class="botoes_ancora">Saiba mais</a>
-            </div>
-          </div>
     </section>
 
     <section class="topicos">
@@ -142,8 +183,10 @@
     </section>
 
     <section class="contato">
-        <h2 class="contato_titulo">Fique por dentro das novidades!</h2>
-        <p class="contato_texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato_desc">
+            <h2 class="contato_titulo">Fique por dentro das novidades!</h2>
+            <p class="contato_texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="email" placeholder="Cadastre seu email" class="contato_email">
     </section>
 
@@ -151,6 +194,80 @@
 
     <footer class="rodape">
         <h2 class="rodape_titulo">Grupo Alura</h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape_titulo">Educação</li>
+            <li class="lista-rodape_item">
+                <img src="img/CasaDoCodigo.svg" alt="casa do codigo">
+                <a href="#">Casa do codigo</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/Caelum.svg" alt="Caelum">
+                <a href="#">Caelum</a>
+            </li>
+        </ul>
+        <ul class="lista-rodape">
+            <li class="lista-rodape_titulo">Educação online</li>
+            <li class="lista-rodape_item">
+                <img src="img/Alura.svg" alt="Alura">
+                <a href="#">Alura</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/AluraEmpresas.svg" alt="Alura empresas">
+                <a href="#">Alura Para Empresas</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/AluraLATAM.svg" alt="Alura Latam">
+                <a href="#">Alura LATAM</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/AluraStart.svg" alt="Alura Start">
+                <a href="#">Alura Start</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/MusicDot.svg" alt="MusicDot">
+                <a href="#">MusicDot</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/AluraLingua.svg" alt="Alura Lingua">
+                <a href="#">Alura Lingua</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/PM3.svg" alt="PM3">
+                <a href="#">PM3</a>
+            </li>
+        </ul>
+        <ul class="lista-rodape">
+            <li class="lista-rodape_titulo">Comunidade</li>
+            <li class="lista-rodape_item">
+                <img src="img/HipstersTech.svg" alt="Hipsters ponto Tech">
+                <a href="#">Hipsters ponto Tech</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/ScubaDev.svg" alt="ScubaDev">
+                <a href="#">ScubaDev</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/LayersTech.svg" alt="LayersTech">
+                <a href="#">LayersTech</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/LikeABoss.svg" alt="LikeABoss">
+                <a href="#">Like a Boss</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/CarreiraSemFronteira.svg" alt="Carreira Sem Fronteira">
+                <a href="#">Carreira Sem Fronteira</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/HipstersJobs.svg" alt="HipstersJobs">
+                <a href="#">Hipsters ponto Jobs</a>
+            </li>
+            <li class="lista-rodape_item">
+                <img src="img/GUJ.svg" alt="GUJ">
+                <a href="#">GUJ</a>
+            </li>
+        </ul>
+        
     </footer>
 
 
