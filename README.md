@@ -1,6 +1,6 @@
-*POR ENQUANTO SÓ FUNCIONA NO CELULAR*
+https://scowp.github.io/mobile-first/#
 
-Está sendo usado SwipeJS
+foi usado SwipeJS
 
 -CELULAR-
 
